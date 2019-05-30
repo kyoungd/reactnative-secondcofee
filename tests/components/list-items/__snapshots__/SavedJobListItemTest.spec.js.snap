@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<Swipeout
+  autoClose={true}
+  backgroundColor="transparent"
+  disabled={false}
+  right={
+    Array [
+      Object {
+        "onPress": [Function],
+        "text": "Remove",
+        "type": "delete",
+      },
+    ]
+  }
+  rowID={-1}
+  sectionID={-1}
+  sensitivity={50}
+>
+  <ForwardRef
+    onPress={[Function]}
+  >
+    <ImageProgressComponent
+      imageStyle={
+        Object {
+          "borderRadius": 8,
+        }
+      }
+      photoURL="https://imgur.com/5WzWMpx.png"
+      resizeMode="cover"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+    <ForwardRef>
+      <ForwardRef>
+        UI/UX Developer
+      </ForwardRef>
+      <ForwardRef>
+        Universal Studios
+      </ForwardRef>
+      <ForwardRef>
+        <ActionButton
+          onPress={[Function]}
+          text="Apply"
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+</Swipeout>
+`;

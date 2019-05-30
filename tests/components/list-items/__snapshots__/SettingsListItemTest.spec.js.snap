@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef
+  onPress={[Function]}
+>
+  <ForwardRef
+    position="left"
+  >
+    <Icon
+      allowFontScaling={false}
+      color="#346df1"
+      name="ios-settings"
+      size={25}
+    />
+  </ForwardRef>
+  <ForwardRef>
+    <ForwardRef>
+      Settings
+    </ForwardRef>
+  </ForwardRef>
+  <ForwardRef>
+    <Icon
+      allowFontScaling={false}
+      color="#000"
+      name="ios-arrow-forward"
+      size={20}
+    />
+  </ForwardRef>
+</ForwardRef>
+`;

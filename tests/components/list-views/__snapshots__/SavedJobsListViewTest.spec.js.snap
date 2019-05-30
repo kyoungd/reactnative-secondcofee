@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef>
+  <FlatList
+    ItemSeparatorComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "companyName": "Shell - New Haven, CT",
+          "experience": "2-3 years",
+          "photoURL": "https://bit.ly/2HqJLtg",
+          "postedAt": "25 February 2019",
+          "title": "Terminal Operator",
+        },
+        Object {
+          "companyName": "Penguin Random House LLC",
+          "experience": "4-5 years",
+          "photoURL": "https://bit.ly/2HtM9Q2",
+          "postedAt": "2 Mar 2019",
+          "title": "Editorial, Marketing, and Publicity Intern",
+        },
+        Object {
+          "companyName": "ProAct, Inc. - Gouverneur, NY",
+          "experience": "1-2 years",
+          "photoURL": "https://bit.ly/2F0hlnb",
+          "postedAt": "22 February 2019",
+          "title": "Data Entry Associate",
+        },
+        Object {
+          "companyName": "Kings Dominion",
+          "experience": "0-1 years",
+          "photoURL": "https://bit.ly/2HtM9Q2",
+          "postedAt": "9 Mar 2019",
+          "title": "Entertainment- Concert Crew",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</ForwardRef>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef
+  regular={false}
+>
+  <ForwardRef
+    regular={false}
+  >
+    <ForwardRef
+      disabled={false}
+      keyboardType="default"
+      onChangeText={[Function]}
+      onSubmitEditing={[Function]}
+      placeholder="Form Input"
+      placeholderTextColor="#a5a5a5"
+      returnKeyType="next"
+      secureTextEntry={false}
+      value="Form Input Value"
+    />
+  </ForwardRef>
+</ForwardRef>
+`;

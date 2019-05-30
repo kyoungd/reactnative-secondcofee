@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef>
+  <ForwardRef
+    max={10000}
+    min={1000}
+    onValuesChange={[Function]}
+    step={10}
+    values={
+      Array [
+        1000,
+        9000,
+      ]
+    }
+  />
+</ForwardRef>
+`;

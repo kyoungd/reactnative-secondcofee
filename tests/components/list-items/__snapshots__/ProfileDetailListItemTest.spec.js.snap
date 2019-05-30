@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef>
+  <ForwardRef>
+    <Icon
+      allowFontScaling={false}
+      color="#a5a5a5"
+      name="ios-locate"
+      size={25}
+    />
+  </ForwardRef>
+  <ForwardRef>
+    <ForwardRef>
+      Shipping Address
+    </ForwardRef>
+    <ForwardRef>
+      717 Leatherwood Road Hoffman Estates, IL 60169
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef>
+`;

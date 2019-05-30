@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef
+  imageStyle={
+    Object {
+      "borderRadius": 40,
+    }
+  }
+  resizeMode="cover"
+  source={
+    Object {
+      "uri": "https://imgur.com/5WzWMpx.png",
+    }
+  }
+  style={
+    Object {
+      "height": 80,
+      "width": 80,
+    }
+  }
+/>
+`;

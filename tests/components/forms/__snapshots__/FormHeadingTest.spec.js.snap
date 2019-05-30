@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<React.Fragment>
+  <ForwardRef
+    numberOfLines={1}
+  >
+    A form heading
+  </ForwardRef>
+  <ForwardRef
+    numberOfLines={2}
+  >
+    Some text that supports the heading
+  </ForwardRef>
+</React.Fragment>
+`;

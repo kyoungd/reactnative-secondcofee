@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef
+  active={true}
+  onPress={[Function]}
+>
+  <ForwardRef
+    active={true}
+  >
+    Filter
+  </ForwardRef>
+</ForwardRef>
+`;

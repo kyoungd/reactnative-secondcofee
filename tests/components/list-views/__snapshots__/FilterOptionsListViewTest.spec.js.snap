@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef>
+  <ForwardRef>
+    <FilterOptionListItem
+      active={true}
+      label="Tech"
+      onPress={[Function]}
+    />
+    <FilterOptionListItem
+      active={false}
+      label="Banking"
+      onPress={[Function]}
+    />
+    <FilterOptionListItem
+      active={false}
+      label="Fashion"
+      onPress={[Function]}
+    />
+    <FilterOptionListItem
+      active={false}
+      label="Construction"
+      onPress={[Function]}
+    />
+  </ForwardRef>
+</ForwardRef>
+`;

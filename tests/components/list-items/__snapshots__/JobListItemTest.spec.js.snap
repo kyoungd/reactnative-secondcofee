@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<ForwardRef>
+  <ForwardRef
+    onPress={[Function]}
+  >
+    <ForwardRef>
+      UI/UX Developer
+    </ForwardRef>
+    <ForwardRef>
+      Universal Studios
+    </ForwardRef>
+    <ForwardRef>
+      <ForwardRef>
+        <ForwardRef
+          name="ios-time"
+        />
+        <ForwardRef>
+          13 Mar 2019
+        </ForwardRef>
+      </ForwardRef>
+      <ForwardRef>
+        <ForwardRef
+          name="ios-flash"
+        />
+        <ForwardRef>
+          Experience: 
+          2-3 years
+        </ForwardRef>
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+  <ForwardRef>
+    <Icon
+      allowFontScaling={false}
+      color="#a5a5a5"
+      name="bookmark"
+      onPress={[Function]}
+      size={26}
+    />
+  </ForwardRef>
+</ForwardRef>
+`;
