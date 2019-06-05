@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import View from 'react-native'
 import styled from 'styled-components/native'
 import { Formik } from 'formik'
 import * as yup from 'yup'
@@ -30,89 +30,37 @@ const ResetPasswordText = styled.Text`
   text-align: center;
 `
 
-const initialValues = {
-  email: '',
-  password: ''
-}
-
-const validationSchema = yup.object().shape({
-  email: yup
-    .string()
-    .required('email address is required')
-    .email('enter a valid email address'),
-  password: yup.string().required('password is required')
-})
-
 export default function SignInSocial({
   loading,
   onSubmit,
   onResetPasswordPress
 }) {
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={values => onSubmit(values)}
-      render={props => (
-        <KeyboardAwareScrollView enableOnAndroid>
-          <Wrapper>
-            <LogoWrapper>
-              <Logo />
-            </LogoWrapper>
+   <View>
+    <Wrapper>
 
-            <FormField
-              label="Email"
-              keyboardType="email-address"
-              value={props.values.email}
-              onChangeText={text => props.setFieldValue('email', text)}
-              error={props.touched.email && props.errors.email}
-            />
+      <RegularButton
+        text="Facebook"
+        onPress={() => props.handleFacebook()}
+      />
 
-            <FormField
-              label="Password"
-              secure
-              value={props.values.password}
-              onChangeText={text => props.setFieldValue('password', text)}
-              error={props.touched.password && props.errors.password}
-            />
+      <RegularButton
+        text="Google"
+        onPress={() => props.handleGoogle()}
+      />
 
-            <RegularButton
-              text="SIGN IN"
-              onPress={() => props.handleSubmit()}
-            />
+      <RegularButton
+        text="Twitter"
+        onPress={() => props.handleTwitter()}
+      />
 
-            <ResetPasswordText onPress={() => onResetPasswordPress()}>
-              Forgot password?
-            </ResetPasswordText>
-
-            {loading && <CustomActivityIndicator />}
-          </Wrapper>
-          <Wrapper>
-
-            <RegularButton
-              text="Facebook"
-              onPress={() => props.handleSubmit()}
-            />
-
-            <RegularButton
-              text="Google"
-              onPress={() => props.handleSubmit()}
-            />
-
-            <RegularButton
-              text="Twitter"
-              onPress={() => props.handleSubmit()}
-            />
-
-          </Wrapper>
-        </KeyboardAwareScrollView>
-      )}
-    />
+    </Wrapper>
+  </View>
   )
 }
 
 SignInSocial.propTypes = {
-  loading: PropTypes.bool.isRequired,
-  onSubmit: PropTypes.func.isRequired,
-  onResetPasswordPress: PropTypes.func.isRequired
+  handleFacebook: PropTypes.func.isRequired,
+  handleGoogle: PropTypes.func.isRequired,
+  handleTwitter: PropTypes.func.isRequired
 }

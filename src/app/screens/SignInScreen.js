@@ -1,28 +1,48 @@
 import React from 'react'
-import { Container } from 'native-base'
+import firebase from 'firebase'
+import { Container, Text } from 'native-base'
 import { SafeAreaViewWrapper, CustomStatusBar } from 'components/ui'
 import { SignInForm } from 'components/forms'
 
 export default class SignInScreen extends React.Component {
   static navigationOptions = {
-    title: 'Sign in'
+    title: 'Sign In',
   }
 
   state = {
-    formLoading: false
+    formLoading: false,
+    loginFailed: false,
+  }
+
+  onLoginSuccess() {
+    const { navigation } = this.props
+    this.setState({ formLoading: false, loginFailed: false })
+    navigation.navigate('Dashboard')
+  }
+
+  onLoginFail() {
+    this.setState({ formLoading: false, loginFailed: true })
   }
 
   onFormSubmit(values) {
-    const { navigation } = this.props
+    // const { navigation } = this.props
 
     this.setState({ formLoading: true })
+    const { email, password } = values
 
-    // const { email, password } = values
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .then(this.onLoginSuccess.bind(this))
+    .catch(this.onLoginFail.bind(this))
+    // .catch(() => {
+      // firebase.auth().createUserWithEmailAndPassword(email, password)
+      // .then(this.onLoginSuccess.bind(this))
+      // .catch(this.onLoginFail.bind(this));
+    // })
 
-    setTimeout(() => {
-      this.setState({ formLoading: false })
-      navigation.navigate('Dashboard')
-    }, 1500)
+    // setTimeout(() => {
+    //   this.setState({ formLoading: false })
+    //   navigation.navigate('Dashboard')
+    // }, 1500)
   }
 
   render() {
@@ -39,6 +59,7 @@ export default class SignInScreen extends React.Component {
             onSubmit={values => this.onFormSubmit(values)}
             onResetPasswordPress={() => navigation.navigate('ResetPassword')}
           />
+          <Text>{this.state.loginFailed ? 'LOGIN FAILED' : ''}</Text>
         </Container>
       </SafeAreaViewWrapper>
     )

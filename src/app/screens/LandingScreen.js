@@ -57,7 +57,7 @@ export default class LandingScreen extends React.Component {
           <ImageOverlayComponent>
             <Heading>Welcome to 2nd Coffee</Heading>
             <DescriptionText>
-              We are Uber to the START-UP business. Become an entrepreneur
+              We are the Uber to the START-UP business. Become an entrepreneur
               the easy way. Join a Start-up, and work only the hours you want for OWNERSHIP.
             </DescriptionText>
           </ImageOverlayComponent>
